@@ -1,0 +1,168 @@
+<html>
+<head>
+    <title>Test Your Knowledge on Water Polo</title>
+    <style>
+        body {
+            background-color: #000;
+            font-family: Kaisei Tokumin;
+            margin: 0;
+            padding: 0;
+        }
+
+        #quiz-container {
+            background-color: #fff;
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        #question-container {
+            background-color: #a3c9fb;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #a3c9fb;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6471be;
+        }
+    </style>
+</head>
+<a href="/Nighthawk-Pages/">
+    <button>Home</button>
+</a>
+<body>
+    <div id="quiz-container">
+        <h1>Water Polo Quiz</h1>
+        <div id="question-container">
+            <p id="question"></p>
+        </div>
+        <div id="choices-container"></div>
+        <div id="result-container" style="display: none;"></div>
+        <div class="button-container">
+            <button id="next-button">Next</button>
+            <button id="try-again-button" style="display: none;">Try Again</button>
+        </div>
+    </div>
+    <script>
+        const questions = [
+            {
+                question: "What is the maximum number of players allowed in the water by each team during a standard water polo game?",
+                choices: ["5 players", "7 players", "11 players", "12 players"],
+                correct: "7 players"
+            },
+            {
+                question: "How long does a standard quarter last in water polo?",
+                choices: ["8 minutes", "10 minutes", "12 minutes", "15 minutes"],
+                correct: "12 minutes"
+            },
+            {
+                question: "What is the name of the area in front of the goal where offensive players are not allowed to linger for more than 20 seconds?",
+                choices: ["Exclusion zone", "Neutral zone", "Two-meter area", "Five-meter line"],
+                correct: "Two-meter area"
+            },
+            {
+                question: "What is the main objective of the game in water polo?",
+                choices: ["Score goals by shooting the ball into the opponent's goal", "Complete laps around the pool", "Perform synchronized swimming routines", "Keep possession of the ball for the entire game"],
+                correct: "Score goals by shooting the ball into the opponent's goal"
+            },
+            {
+                question: "How long is the shot clock in water polo, which dictates the maximum time a team has to attempt a shot on goal?",
+                choices: ["20 seconds", "30 seconds", "40 seconds", "60 seconds"],
+                correct: "30 seconds"
+            }
+        ];
+
+        const quizContainer = document.getElementById("quiz-container");
+        const questionContainer = document.getElementById("question-container");
+        const choicesContainer = document.getElementById("choices-container");
+        const resultContainer = document.getElementById("result-container");
+        const nextButton = document.getElementById("next-button");
+        const tryAgainButton = document.getElementById("try-again-button");
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        function showQuestion(questionIndex) {
+            if (questionIndex < questions.length) {
+                resultContainer.style.display = "none";
+                const question = questions[questionIndex];
+                questionContainer.textContent = question.question;
+
+                choicesContainer.innerHTML = "";
+                question.choices.forEach((choice) => {
+                    const choiceButton = document.createElement("button");
+                    choiceButton.textContent = choice;
+                    choiceButton.addEventListener("click", () => checkAnswer(choice, question.correct));
+                    choicesContainer.appendChild(choiceButton);
+                });
+            } else {
+                endQuiz();
+            }
+        }
+
+        function checkAnswer(selectedChoice, correctChoice) {
+            if (selectedChoice === correctChoice) {
+                score++;
+            }
+
+            currentQuestionIndex++;
+
+            if (currentQuestionIndex < questions.length) {
+                showQuestion(currentQuestionIndex);
+            } else {
+                endQuiz();
+            }
+        }
+
+        function endQuiz() {
+            questionContainer.style.display = "none";
+            choicesContainer.style.display = "none";
+            resultContainer.style.display = "block";
+            resultContainer.textContent = `Quiz Complete! Your Score: ${score}/${questions.length}`;
+            nextButton.style.display = "none";
+            tryAgainButton.style.display = "block";
+        }
+
+        nextButton.addEventListener("click", () => {
+            showQuestion(currentQuestionIndex);
+        });
+
+        tryAgainButton.addEventListener("click", () => {
+            currentQuestionIndex = 0;
+            score = 0;
+            questionContainer.style.display = "block";
+            choicesContainer.style.display = "block";
+            resultContainer.style.display = "none";
+            nextButton.style.display = "block";
+            tryAgainButton.style.display = "none";
+            showQuestion(currentQuestionIndex);
+        });
+
+        showQuestion(currentQuestionIndex);
+    </script>
+</body>
+</html>
