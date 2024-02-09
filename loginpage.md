@@ -140,11 +140,11 @@ permalink: /login
           redirect: 'follow'
         };
 
-      fetch("http://127.0.0.1:8086/api/users/authenticate", requestOptions)
+      fetch("http://127.0.0.1:8088/api/users/authenticate", requestOptions)
           .then(response => {
             if (response.ok) {
                 console.log("User logged in successfully");
-                window.location.href = "http://127.0.0.1:4200/csp3-repo//2024/02/06/parentpagesqldatabase.html"
+                window.location.href = "http://127.0.0.1:4200/wopoguide/ai"
               } else {
                 console.error("User login failed");
                 // You can handle failed login attempts here
@@ -186,9 +186,8 @@ permalink: /login
     </p>
     <p>
      <button class="button-spacing">Log In</button>
-          <button onClick = "window.location.href ='https://ellierozen.github.io/csp3-repo//2024/01/21/signuppage.html'" class="button-spacing" >Sign Up</button>
-
-      
+          <button onClick = "location.href=' //ellierozen/wopoguide/signup'" class="button-spacing" >Sign Up</button>
+          
     </p>
   </form>
 

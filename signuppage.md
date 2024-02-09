@@ -1,6 +1,7 @@
 ---
 layout: home
 search_exclude: true
+permalink: /signup
 ---
 
 <html lang="en">
@@ -53,12 +54,12 @@ search_exclude: true
           redirect: 'follow'
         };
 
-      fetch("http://127.0.0.1:8086/api/users/", requestOptions)
+      fetch("http://127.0.0.1:8088/api/users/", requestOptions)
           .then(response => {
             if (response.ok) {
                 console.log("Successfully Signed Up");
                 alert("Account has been created. You will be directed to login page shortly.");
-                window.location.href = "https://ellierozen.github.io/csp3-repo//2023/01/21/loginpage.html"
+                window.location.href = "http://ellierozen/wopoguide/login"
               } else {
                 console.error("Sign Up Failed");
                 // You can handle failed login attempts here
