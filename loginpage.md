@@ -186,7 +186,7 @@ permalink: /login
     </p>
     <p>
      <button class="button-spacing">Log In</button>
-          <button onClick = "location.href=' //ellierozen/wopoguide/signup'" class="button-spacing" >Sign Up</button>
+          <button onClick = "location.href=' //ellierozen.github.io/wopoguide/signup'" class="button-spacing" >Sign Up</button>
           
     </p>
   </form>
