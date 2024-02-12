@@ -59,7 +59,7 @@ permalink: /signup
             if (response.ok) {
                 console.log("Successfully Signed Up");
                 alert("Account has been created. You will be directed to login page shortly.");
-                window.location.href = "http://ellierozen/wopoguide/login"
+                window.location.href = "//ellierozen.github.io/wopoguide/login"
               } else {
                 console.error("Sign Up Failed");
                 // You can handle failed login attempts here

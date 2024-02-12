@@ -3,6 +3,66 @@ layout: home
 search_exclude: true
 permalink: /login
 ---
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-messages {
+    margin-bottom: 20px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.user {
+    background-color: #f2f2f2;
+    text-align: right;
+}
+
+.bot {
+    background-color: #e6f7ff;
+    text-align: left;
+}
+
+.user-input {
+    width: calc(100% - 70px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.send-button {
+    width: 60px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send-button:hover {
+    background-color: #0056b3;
+}
+
 <html>
 <head>
     <style>
@@ -144,7 +204,7 @@ permalink: /login
           .then(response => {
             if (response.ok) {
                 console.log("User logged in successfully");
-                window.location.href = "http://127.0.0.1:4200/wopoguide/ai"
+                window.location.href = "http://127.0.0.1:4200/wopoguide/score"
               } else {
                 console.error("User login failed");
                 // You can handle failed login attempts here
