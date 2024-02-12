@@ -114,7 +114,7 @@ permalink: /login
       console.log("Password = " + enteredPassword)
       const signupHeaders = new Headers();
       signupHeaders.set('111', '222');
-      
+
       signupHeaders.set("Accept", "*/*");
       signupHeaders.set("Accept-Language", "en-US,en;q=0.9");
       signupHeaders.set("Content-Type", "application/json");
@@ -145,7 +145,7 @@ permalink: /login
           .then(response => {
             if (response.ok) {
                 console.log("User logged in successfully");
-                window.location.href = "http://127.0.0.1:4200/wopoguide/score"
+                window.location.href = "https://ellierozen.github.io/wopoguide/score"
               } else {
                 console.error("User login failed");
                 // You can handle failed login attempts here

@@ -21,7 +21,7 @@ permalink: /signup
         console.log("dob = " + enteredDOB)
         const signupHeaders = new Headers();
       signupHeaders.set('111', '222');
-      
+  
       signupHeaders.set("Accept", "*/*");
       signupHeaders.set("Accept-Language", "en-US,en;q=0.9");
       signupHeaders.set("Content-Type", "application/json");
