@@ -51,6 +51,7 @@ search_exclude: true
           vertical-align: top; /* Align cards to the top of the row */
           margin-right: 2.5%; /* Added margin between cards */
           margin-bottom: 20px; /* Added margin to create space between rows */
+          height: 450px; /* Fixed height for the cards */
         }
         .card:last-child {
           margin-right: 0; /* Remove margin from last card to prevent extra space */
@@ -125,7 +126,7 @@ search_exclude: true
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Card 1 -->
     <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204202021599846480/Screenshot_2024-02-05_at_3.08.07_PM.png?ex=65d3df86&is=65c16a86&hm=b61dc7555f8f8972cd812852f31848a21ad3b08d240648a40a7e7cd2670a3313&m" alt="Avatar">
+        <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204202021599846480/Screenshot_2024-02-05_at_3.08.07_PM.png?ex=65d3df86&is=65c16a86&hm=b61dc7555f8f8972cd812852f31848a21ad3b08d240648a40a7e7cd2670a3313&m" alt="Avatar" style="width:100%; height:250px;">
         <div class="container">
             <center><h4><b>Use our AI platform to help answer any of your pressing questions about WaterPolo.</b></h4></center>
            <center> <button onclick="location.href='//127.0.0.1:4100/wopoguide/ai';">Go To Search</button></center>
