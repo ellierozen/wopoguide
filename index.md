@@ -109,7 +109,6 @@ search_exclude: true
     <button class="dropbtn">. . .</button>
     <div class="dropdown-content">
         <a href="waterpoloquiz.html">Waterpolo Quiz</a>
-        <a href="puthtmlfilehere">See Previous Questions</a>
     </div>
     </div>
         <br>
@@ -140,10 +139,10 @@ search_exclude: true
 <!-- Card 3 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204202031208865812/Screenshot_2024-02-05_at_3.08.26_PM.png?ex=65d3df89&is=65c16a89&hm=d34ca86134227868f8198b388cace8539faadc076d1f52b87ddab37d298c3cdf&" alt="Avatar" style="width:100%">
+        <img src="https://cdn.discordapp.com/attachments/879557685253664768/1207082743935139901/Screenshot_2024-02-13_at_1.55.33_PM.png?ex=65de5a68&is=65cbe568&hm=3839bb39e6c38779ae277c4d70699d9ad2a3d3c816d004f1887bf0398286141d&" alt="Avatar" style="width:100%">
         <div class="container">
-            <center><h4><b>Click here to learn more about the Del Norte Varsity Girls WOPO Team!</b></h4></center>
-            <center><button onclick="location.href='//ellierozen.github.io/wopoguide/login';">Search</button></center>
+            <center><h4><b>Learn more about the Del Norte Varsity Girls WOPO Team!</b></h4></center>
+            <center><button onclick="location.href='//ellierozen.github.io/wopoguide/';">Search</button></center>
             <br>
         </div>
     </div>
