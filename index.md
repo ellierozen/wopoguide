@@ -47,9 +47,11 @@ search_exclude: true
           width: 50%;
           background-color: #7ea7f4;
           margin: 0 auto; /* Center the card */
+          border-radius: 15px; /* Rounded corners */
         }
         .card:hover {
           box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          transform: scale(1.05); /* Increase size on hover */
         }
         .container {
           padding: 2px 16px;
@@ -103,7 +105,7 @@ search_exclude: true
 <body>
     <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204205967869218826/Screenshot_2024-02-05_at_3.24.25_PM.png?ex=65d3e333&is=65c16e33&hm=aae9b2a306689aade3cf04f87fc475c907941d1de0ec7dfe45547488eeb50c53&" alt="image" style="width:100%">
     <div class="dropdown">
-    <button class="dropbtn">...</button>
+    <button class="dropbtn">. . .</button>
     <div class="dropdown-content">
         <a href="waterpoloquiz.html">Waterpolo Quiz</a>
         <a href="puthtmlfilehere">See Previous Questions</a>
@@ -115,7 +117,7 @@ search_exclude: true
     <div class="card">
         <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204202021599846480/Screenshot_2024-02-05_at_3.08.07_PM.png?ex=65d3df86&is=65c16a86&hm=b61dc7555f8f8972cd812852f31848a21ad3b08d240648a40a7e7cd2670a3313&m" alt="Avatar" style="width:100%">
         <div class="container">
-            <center><h4><b>Use our AI platform to help answer any of your pressing questions about WaterPolo</b></h4></center>
+            <center><h4><b>Use our AI platform to help answer any of your pressing questions about WaterPolo.</b></h4></center>
            <center> <button onclick="location.href='//127.0.0.1:4100/wopoguide/ai';">Go To Search</button></center>
             <br>
         </div>
