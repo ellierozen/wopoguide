@@ -2,7 +2,6 @@
 layout: home
 search_exclude: true
 ---
-
 <html>
 <head>
     <style>
@@ -45,10 +44,16 @@ search_exclude: true
         .card {
           box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
           transition: 0.3s;
-          width: 50%;
+          width: 30%; /* Adjusted width to fit three cards in a row */
           background-color: #7ea7f4;
-          margin: 0 auto; /* Center the card */
           border-radius: 15px; /* Rounded corners */
+          display: inline-block; /* Display cards inline */
+          vertical-align: top; /* Align cards to the top of the row */
+          margin-right: 2.5%; /* Added margin between cards */
+          margin-bottom: 20px; /* Added margin to create space between rows */
+        }
+        .card:last-child {
+          margin-right: 0; /* Remove margin from last card to prevent extra space */
         }
         .card:hover {
           box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -101,6 +106,10 @@ search_exclude: true
         .dropdown:hover .dropbtn {
         background-color: #3e8e41;
         }
+        img {
+          max-width: 100%; /* Ensure images don't exceed container width */
+          height: auto; /* Maintain aspect ratio */
+        }
     </style>
 </head>
 <body>
@@ -111,33 +120,28 @@ search_exclude: true
         <a href="waterpoloquiz.html">Waterpolo Quiz</a>
     </div>
     </div>
-        <br>
+    <br>
+    <br>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Card 1 -->
     <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204202021599846480/Screenshot_2024-02-05_at_3.08.07_PM.png?ex=65d3df86&is=65c16a86&hm=b61dc7555f8f8972cd812852f31848a21ad3b08d240648a40a7e7cd2670a3313&m" alt="Avatar" style="width:100%">
+        <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204202021599846480/Screenshot_2024-02-05_at_3.08.07_PM.png?ex=65d3df86&is=65c16a86&hm=b61dc7555f8f8972cd812852f31848a21ad3b08d240648a40a7e7cd2670a3313&m" alt="Avatar">
         <div class="container">
             <center><h4><b>Use our AI platform to help answer any of your pressing questions about WaterPolo.</b></h4></center>
            <center> <button onclick="location.href='//127.0.0.1:4100/wopoguide/ai';">Go To Search</button></center>
             <br>
         </div>
     </div>
-    <br>
-    <br>
     <!-- Card 2 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204202031208865812/Screenshot_2024-02-05_at_3.08.26_PM.png?ex=65d3df89&is=65c16a89&hm=d34ca86134227868f8198b388cace8539faadc076d1f52b87ddab37d298c3cdf&" alt="Avatar" style="width:100%">
+        <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204202031208865812/Screenshot_2024-02-05_at_3.08.26_PM.png?ex=65d3df89&is=65c16a89&hm=d34ca86134227868f8198b388cace8539faadc076d1f52b87ddab37d298c3cdf&" alt="Avatar">
         <div class="container">
             <center><h4><b>Interested in tracking local games? Use our catalog below to enter any teams you’re interested in watching!</b></h4></center>
             <center><button onclick="location.href='//ellierozen.github.io/wopoguide/login';">Search</button></center>
             <br>
         </div>
     </div>
-    <br>
-    <br>
-<!-- Card 3 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Card 3 -->
     <div class="card">
         <img src="https://cdn.discordapp.com/attachments/879557685253664768/1207082743935139901/Screenshot_2024-02-13_at_1.55.33_PM.png?ex=65de5a68&is=65cbe568&hm=3839bb39e6c38779ae277c4d70699d9ad2a3d3c816d004f1887bf0398286141d&" alt="Avatar" style="width:100%">
         <div class="container">
