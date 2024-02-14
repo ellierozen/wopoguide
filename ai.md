@@ -9,7 +9,7 @@ permalink: /ai
     <style>
     body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #006FB9;
 }
 .main-header {
     font-size: 30px;
