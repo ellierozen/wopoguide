@@ -9,19 +9,22 @@ search_exclude: true
             background-color: #006FB9;
         }
         .button {
-            color: #000000;
-            font-size: 20px;
-            font-family: sans-serif;
+            color: #000;
+            font-size: 18px;
+            font-family: serif;
             line-height: auto;
-            border-style: hidden;
             outline: none;
-            background: none;
+            background: #FAE29C;
             border: none;
             cursor: pointer;
             text-align: center;
+            border-radius: 10px;
         }
         .button:hover {
             text-decoration: underline;
+            background: #DAC17C;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            transform: scale(1.05);
         }
         .arthub {
             font-size: 36px;
@@ -113,7 +116,8 @@ search_exclude: true
     </style>
 </head>
 <body>
-    <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204205967869218826/Screenshot_2024-02-05_at_3.24.25_PM.png?ex=65d3e333&is=65c16e33&hm=aae9b2a306689aade3cf04f87fc475c907941d1de0ec7dfe45547488eeb50c53&" alt="image" style="width:100%">
+<!-- Title -->
+    <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204205967869218826/Screenshot_2024-02-05_at_3.24.25_PM.png?ex=65d3e333&is=65c16e33&hm=aae9b2a306689aade3cf04f87fc475c907941d1de0ec7dfe45547488eeb50c53&" alt="image" style="width:96%; height:200px">
     <div class="dropdown">
     <button class="dropbtn">. . .</button>
     <div class="dropdown-content">
@@ -121,35 +125,34 @@ search_exclude: true
     </div>
     </div>
     <br>
-    <br>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Card 1 -->
+<!-- Card 1 -->
     <div class="card">
         <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204202021599846480/Screenshot_2024-02-05_at_3.08.07_PM.png?ex=65d3df86&is=65c16a86&hm=b61dc7555f8f8972cd812852f31848a21ad3b08d240648a40a7e7cd2670a3313&m" alt="Avatar" style="width:100%; height:250px;">
         <div class="container">
             <center><h4><b>Use our AI platform to help answer any of your pressing questions about WaterPolo.</b></h4></center>
-           <center> <button onclick="location.href='//127.0.0.1:4100/wopoguide/ai';">Go To Search</button></center>
+           <center> <button class="button" onclick="location.href='//127.0.0.1:4100/wopoguide/ai';">Go To Search</button></center>
             <br>
         </div>
     </div>
-    <!-- Card 2 -->
+<!-- Card 2 -->
     <div class="card">
         <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204202031208865812/Screenshot_2024-02-05_at_3.08.26_PM.png?ex=65d3df89&is=65c16a89&hm=d34ca86134227868f8198b388cace8539faadc076d1f52b87ddab37d298c3cdf&" alt="Avatar">
         <div class="container">
             <center><h4><b>Interested in tracking local games? Use our catalog below to enter any teams you’re interested in watching!</b></h4></center>
-            <center><button onclick="location.href='//ellierozen.github.io/wopoguide/login';">Search</button></center>
+            <center><button class="button" onclick="location.href='//ellierozen.github.io/wopoguide/login';">Search</button></center>
             <br>
         </div>
     </div>
-    <!-- Card 3 -->
+<!-- Card 3 -->
     <div class="card">
         <img src="https://cdn.discordapp.com/attachments/879557685253664768/1207082743935139901/Screenshot_2024-02-13_at_1.55.33_PM.png?ex=65de5a68&is=65cbe568&hm=3839bb39e6c38779ae277c4d70699d9ad2a3d3c816d004f1887bf0398286141d&" alt="Avatar" style="width:100%">
         <div class="container">
             <center><h4><b>Learn more about the Del Norte Varsity Girls WOPO Team!</b></h4></center>
-            <center><button onclick="location.href='//ellierozen.github.io/wopoguide/';">Search</button></center>
-            <br>
+            <center><button class="button" onclick="location.href='//ellierozen.github.io/wopoguide/';">Search</button></center>
         </div>
     </div>
+<!-- Gif -->
     <img src="https://cdn.discordapp.com/attachments/879557685253664768/1207445276508299274/dgcrl11-19db592b-2427-44de-b7e4-8c317c14eda1.gif?ex=65dfac0b&is=65cd370b&hm=be9b878b6715fd585b69f5349b15b30c61b98b890034205ede26eecf3eff6880&" alt="Avatar" style="width:100%; height:150px">
     <br>
     <br>
