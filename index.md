@@ -150,6 +150,7 @@ search_exclude: true
             <br>
         </div>
     </div>
+    <img src="https://cdn.discordapp.com/attachments/879557685253664768/1207445276508299274/dgcrl11-19db592b-2427-44de-b7e4-8c317c14eda1.gif?ex=65dfac0b&is=65cd370b&hm=be9b878b6715fd585b69f5349b15b30c61b98b890034205ede26eecf3eff6880&" alt="Avatar" style="width:100%; height:150px">
     <br>
     <br>
 </body>
