@@ -44,26 +44,25 @@ search_exclude: true
         .card {
           box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
           transition: 0.3s;
-          width: 30%; /* Adjusted width to fit three cards in a row */
+          width: 30%; 
           background-color: #7ea7f4;
-          border-radius: 15px; /* Rounded corners */
-          display: inline-block; /* Display cards inline */
-          vertical-align: top; /* Align cards to the top of the row */
-          margin-right: 2.5%; /* Added margin between cards */
-          margin-bottom: 20px; /* Added margin to create space between rows */
-          height: 450px; /* Fixed height for the cards */
+          border-radius: 15px; 
+          display: inline-block; 
+          vertical-align: top; 
+          margin-right: 2.5%; 
+          margin-bottom: 20px; 
+          height: 450px;
         }
         .card:last-child {
-          margin-right: 0; /* Remove margin from last card to prevent extra space */
+          margin-right: 0; 
         }
         .card:hover {
           box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-          transform: scale(1.05); /* Increase size on hover */
+          transform: scale(1.05);
         }
         .container {
           padding: 2px 16px;
         }
-        /* Style the dropdown button */
         .dropbtn {
         background-color: #006FB9;
         color: white;
@@ -108,8 +107,8 @@ search_exclude: true
         background-color: #3e8e41;
         }
         img {
-          max-width: 100%; /* Ensure images don't exceed container width */
-          height: auto; /* Maintain aspect ratio */
+          max-width: 100%; 
+          height: auto; 
         }
     </style>
 </head>
