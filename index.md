@@ -65,7 +65,7 @@ search_exclude: true
         }
         /* Style the dropdown button */
         .dropbtn {
-        background-color: #4CAF50;
+        background-color: #006FB9;
         color: white;
         padding: 16px;
         font-size: 16px;
