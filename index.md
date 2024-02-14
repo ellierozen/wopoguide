@@ -30,7 +30,7 @@ search_exclude: true
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
+            background-color: #F9F9F9;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
@@ -73,7 +73,7 @@ search_exclude: true
         }
         /* Dropdown button on hover & focus */
         .dropbtn:hover, .dropbtn:focus {
-        background-color: #3e8e41;
+        background-color: #3E8E41;
         }
         /* The container <div> - needed to position the dropdown content */
         .dropdown {
@@ -84,7 +84,7 @@ search_exclude: true
         .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #f9f9f9;
+        background-color: #F9F9F9;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
@@ -97,7 +97,7 @@ search_exclude: true
         display: block;
         }
         /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {background-color: #f1f1f1;}
+        .dropdown-content a:hover {background-color: #F1F1F1;}
         /* Show the dropdown menu on hover */
         .dropdown:hover .dropdown-content {
         display: block;
