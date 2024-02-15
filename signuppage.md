@@ -5,11 +5,6 @@ permalink: /signup
 ---
 
 <html lang="en">
-<style>
-        body {
-            background-color: #006FB9;
-        }
-</style>
 <head>
 <script>
     //import { uri, options } from '{{site.baseurl}}/assets/js/api/config.js';
