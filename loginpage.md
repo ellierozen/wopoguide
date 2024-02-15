@@ -9,6 +9,7 @@ permalink: /login
     <style>
         body {
             background-color: #006FB9;
+            font-size: 18px;
         }
         .button {
             color: #000000;
