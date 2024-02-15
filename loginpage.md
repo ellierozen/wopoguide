@@ -52,6 +52,7 @@ permalink: /login
         }
         .container {
           padding: 2px 16px;
+          color: white;
         }
         /* Style the dropdown button */
         .dropbtn {
@@ -163,9 +164,8 @@ permalink: /login
 <br>
 <br>
 <br>
-<br>
-<br>
   <!-- Your HTML login form -->
+  <div class="container">
   <div id="errorMessage"></div>
   <form action="javascript:login_user()">
     <p><label for="uid">User ID:</label>
@@ -180,7 +180,7 @@ permalink: /login
           
     </p>
   </form>
-
+</div>
   <!-- Your JavaScript code -->
   
 </body>
