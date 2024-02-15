@@ -9,7 +9,7 @@ permalink: /login
     <style>
         body {
             background-color: #006FB9;
-            font-size: 18px;
+            font-size: 20px;
         }
         .button {
             color: #000000;
@@ -25,10 +25,6 @@ permalink: /login
         }
         .button:hover {
             text-decoration: underline;
-        }
-        .arthub {
-            font-size: 36px;
-            width: auto;
         }
         .dropdown-content {
             display: none;
@@ -164,6 +160,11 @@ permalink: /login
 </head>
 
 <body>
+<br>
+<br>
+<br>
+<br>
+<br>
   <!-- Your HTML login form -->
   <div id="errorMessage"></div>
   <form action="javascript:login_user()">
