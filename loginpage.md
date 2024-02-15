@@ -114,15 +114,11 @@ permalink: /login
       console.log("Password = " + enteredPassword)
       const signupHeaders = new Headers();
       signupHeaders.set('111', '222');
-
       signupHeaders.set("Accept", "*/*");
       signupHeaders.set("Accept-Language", "en-US,en;q=0.9");
       signupHeaders.set("Content-Type", "application/json");
-
-      login_api(enteredUid,enteredPassword)
-        
-      }
-    
+      login_api(enteredUid,enteredPassword)        
+      }   
     function login_api(uid, pw){
       var myHeaders = new Headers();
       myHeaders.append("Accept", "*/*");
@@ -133,14 +129,12 @@ permalink: /login
           "uid": uid,
           "password": pw
         });
-
       var requestOptions = {
           method: 'POST',
           headers: myHeaders,
           body: raw,
           redirect: 'follow'
         };
-
       fetch("http://127.0.0.1:8088/api/users/authenticate", requestOptions)
           .then(response => {
             if (response.ok) {
@@ -154,13 +148,9 @@ permalink: /login
               }
           })
           .then(result => { 
-            console.log(result);
-            
+            console.log(result);            
             })
-          .catch(error => console.log('error', error));
-          
-
-      
+          .catch(error => console.log('error', error));      
       //return response
     }
 
@@ -176,9 +166,6 @@ permalink: /login
   <!-- Your HTML login form -->
   <div id="errorMessage"></div>
   <form action="javascript:login_user()">
-  <p><label for="Name"></label>
-     <input type="box" />
-    </p>
     <p><label for="uid">User ID:</label>
       <input type="text" name="uid" id="uid" required>
     </p>
