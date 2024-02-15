@@ -89,7 +89,6 @@ permalink: /score
 </head>
 <body>
     <h1>Water Polo Score Tracker</h1>
-
     <div class="container">
         <h2>Post Game Score</h2>
         <form id="post-form">
@@ -103,11 +102,9 @@ permalink: /score
             <input type="number" id="away_score" name="away_score" required>
             <button type="submit">Submit</button>
         </form>
-
         <h2>Game Scores</h2>
         <ul id="score-list"></ul>
     </div>
-
     <script>
         // Function to fetch and display game scores
         function getGameScores() {
@@ -119,19 +116,16 @@ permalink: /score
                     for (const [gameId, score] of Object.entries(data)) {
                         const listItem = document.createElement('li');
                         listItem.textContent = `${score.home_team} ${score.home_score} - ${score.away_score} ${score.away_team} `;
-
                         const deleteButton = document.createElement('button');
                         deleteButton.textContent = 'Delete';
                         deleteButton.classList.add('delete-button');
                         deleteButton.addEventListener('click', () => deleteScore(gameId));
                         listItem.appendChild(deleteButton);
-
                         scoreList.appendChild(listItem);
                     }
                 })
                 .catch(error => console.error('Error:', error));
         }
-
         // Function to delete a game score
         function deleteScore(gameId) {
             fetch(`http://127.0.0.1:8088/api/score/delete_score/${gameId}`, {
@@ -146,13 +140,11 @@ permalink: /score
             })
             .catch(error => console.error('Error:', error));
         }
-
         // Function to handle form submission and post game score
         document.getElementById('post-form').addEventListener('submit', function(event) {
             event.preventDefault();
             const formData = new FormData(this);
             const data = Object.fromEntries(formData.entries());
-
             fetch('http://127.0.0.1:8088/api/score/post_score', {
                 method: 'POST',
                 headers: {
@@ -174,6 +166,5 @@ permalink: /score
             })
             .catch(error => console.error('Error:', error));
         });
-
         // Get initial game scores on page load
         getGame
