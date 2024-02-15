@@ -5,11 +5,14 @@ permalink: /signup
 ---
 
 <html lang="en">
-
+<style>
+        body {
+            background-color: #006FB9;
+        }
+</style>
 <head>
 <script>
     //import { uri, options } from '{{site.baseurl}}/assets/js/api/config.js';
-
     function signUp_user() {
         const enteredName = document.getElementById("name").value;
         const enteredUid = document.getElementById("uid").value;
@@ -20,40 +23,30 @@ permalink: /signup
         console.log("Password = " + enteredPassword)
         console.log("dob = " + enteredDOB)
         const signupHeaders = new Headers();
-      signupHeaders.set('111', '222');
-  
+      signupHeaders.set('111', '222');  
       signupHeaders.set("Accept", "*/*");
       signupHeaders.set("Accept-Language", "en-US,en;q=0.9");
       signupHeaders.set("Content-Type", "application/json");
-
-        signUp_api(enteredName, enteredUid, enteredPassword, enteredDOB)
-        
+        signUp_api(enteredName, enteredUid, enteredPassword, enteredDOB)        
       }
-    
-
     function signUp_api(name, uid, pw, dob){
       let signupHeaders = new Headers();
-      signupHeaders.append('111', '222');
-      
+      signupHeaders.append('111', '222');      
       signupHeaders.append("Accept", "*/*");
       signupHeaders.append("Accept-Language", "en-US,en;q=0.9");
       signupHeaders.append("Content-Type", "application/json");
-      
-
       var raw = JSON.stringify({
           "name" : name,
           "uid": uid,
           "password": pw,
           "dob": dob
         });
-
       var requestOptions = {
           method: 'POST',
           headers: signupHeaders,
           body: raw,
           redirect: 'follow'
         };
-
       fetch("http://127.0.0.1:8088/api/users/", requestOptions)
           .then(response => {
             if (response.ok) {
@@ -68,30 +61,17 @@ permalink: /signup
               }
           })
           .then(result => { 
-            console.log(result);
-            
+            console.log(result);            
             })
-          .catch(error => console.log('error', error));
-          
-
-      
+          .catch(error => console.log('error', error));      
       //return response
     }
-
-
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
   <link rel="stylesheet" href="styles.css"> <!-- Include the compiled CSS file -->
 </head>
-
-
-
-
-
-
-
 
 <body>
     <div class="container">
@@ -114,8 +94,6 @@ permalink: /signup
     <button class="button-spacing">Submit</button>
     </form>
   </div>
-   
-
    
 </body>
 
