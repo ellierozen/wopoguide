@@ -175,7 +175,7 @@ permalink: /login
 <body>
   <!-- Your HTML login form -->
   <div id="errorMessage"></div>
-  <form action="javascript:login_user()">
+  <form action="javascript:login_user()"
   <p><label for="Name"></label>
      <input type="box" />
     </p>

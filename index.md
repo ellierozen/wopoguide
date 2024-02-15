@@ -149,7 +149,7 @@ search_exclude: true
         <img src="https://cdn.discordapp.com/attachments/879557685253664768/1207082743935139901/Screenshot_2024-02-13_at_1.55.33_PM.png?ex=65de5a68&is=65cbe568&hm=3839bb39e6c38779ae277c4d70699d9ad2a3d3c816d004f1887bf0398286141d&" alt="Avatar" style="width:100%">
         <div class="container">
             <center><h4><b>Learn more about the Del Norte Varsity Girls WOPO Team!</b></h4></center>
-            <center><button class="button" onclick="location.href='//ellierozen.github.io/wopoguide/';">Search</button></center>
+            <center><button class="button" onclick="location.href='//ellierozen.github.io/wopoguide/score';">Search</button></center>
         </div>
     </div>
 <!-- Gif -->
