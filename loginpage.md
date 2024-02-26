@@ -52,7 +52,7 @@ permalink: /login
         }
         .container {
           padding: 2px 16px;
-          background-color: white;
+          background-color: #ADD8E6;
         }
         /* Style the dropdown button */
         .dropbtn {
