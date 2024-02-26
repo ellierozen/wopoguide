@@ -6,78 +6,95 @@ permalink: /signup
 <head>
     <style>
         body {
-            font-family: Arial, sans-serif;
             background-color: #006FB9;
-            margin: 0;
-            padding: 0;
+            font-size: 20px;
+        }
+        .button {
+            color: #000000;
+            font-size: 20px;
+            font-family: sans-serif;
+            line-height: auto;
+            border-style: hidden;
+            outline: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        .button:hover {
+            text-decoration: underline;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        h1 {
+            font-size: 40px;
+            color: #111;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 50%;
+          background-color: #7ea7f4;
+          margin: 0 auto; /* Center the card */
+        }
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          padding: 2px 16px;
+          background-color: #ADD8E6;
         }
-        h1, h2 {
-            text-align: center;
-            color: #ADD8E6;
+        /* Style the dropdown button */
+        .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
         }
-        form {
-            margin-bottom: 20px;
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover, .dropbtn:focus {
+        background-color: #3e8e41;
         }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            color: #ADD8E6;
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+        position: relative;
+        display: inline-block;
         }
-        input[type="text"],
-        input[type="number"],
-        button {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
         }
-        button {
-            background-color: #007bff;
-            color: #fff;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+        /* Links inside the dropdown */
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
         }
-        button:hover {
-            background-color: #0056b3;
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+        display: block;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-            color: #ADD8E6;
-        }
-        li {
-            padding: 10px;
-            border-bottom: 1px solid #ccc;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #ADD8E6;
-        }
-        li:last-child {
-            border-bottom: none;
-            color: #ADD8E6;
-        }
-        .delete-button {
-            background-color: #dc3545;
-            color: #fff;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .delete-button:hover {
-            background-color: #c82333;
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
         }
     </style>
 </head>
