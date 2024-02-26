@@ -117,7 +117,7 @@ search_exclude: true
 </head>
 <body>
 <!-- Title -->
-    <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204205967869218826/Screenshot_2024-02-05_at_3.24.25_PM.png?ex=65d3e333&is=65c16e33&hm=aae9b2a306689aade3cf04f87fc475c907941d1de0ec7dfe45547488eeb50c53&" alt="image" style="width:96%; height:200px">
+    <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204205967869218826/Screenshot_2024-02-05_at_3.24.25_PM.png?ex=65e65833&is=65d3e333&hm=1ab443b72af209a4803f44a2ff103e71d52e6480b3dcaec872cc4f1189c23388&" alt="image" style="width:96%; height:200px">
     <div class="dropdown">
     <button class="dropbtn">. . .</button>
     <div class="dropdown-content">
@@ -128,7 +128,7 @@ search_exclude: true
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Card 1 -->
     <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204202021599846480/Screenshot_2024-02-05_at_3.08.07_PM.png?ex=65d3df86&is=65c16a86&hm=b61dc7555f8f8972cd812852f31848a21ad3b08d240648a40a7e7cd2670a3313&m" alt="Avatar" style="width:100%; height:250px;">
+        <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204202021599846480/Screenshot_2024-02-05_at_3.08.07_PM.png?ex=65e65486&is=65d3df86&hm=37b546ef67823e88a9d7eb03204520766505b0b6f828d721e337b62f357940dd&" alt="Avatar" style="width:100%; height:250px;">
         <div class="container">
             <center><h4><b>Use our AI platform to help answer any of your pressing questions about WaterPolo.</b></h4></center>
            <center> <button class="button" onclick="location.href='//127.0.0.1:4100/wopoguide/ai';">Go To Search</button></center>
@@ -137,7 +137,7 @@ search_exclude: true
     </div>
 <!-- Card 2 -->
     <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204202031208865812/Screenshot_2024-02-05_at_3.08.26_PM.png?ex=65d3df89&is=65c16a89&hm=d34ca86134227868f8198b388cace8539faadc076d1f52b87ddab37d298c3cdf&" alt="Avatar">
+        <img src="https://cdn.discordapp.com/attachments/879557685253664768/1207082423020429322/Screenshot_2024-02-13_at_1.53.43_PM.png?ex=65e7949c&is=65d51f9c&hm=884e3407b674f568ce1e02489b8b83fa9e1da2c1b312649b9b6cd7719653e581&" alt="Avatar" style="width:100%; height:250px;">
         <div class="container">
             <center><h4><b>Interested in tracking local games? Use our catalog below to enter any teams you’re interested in watching!</b></h4></center>
             <center><button class="button" onclick="location.href='//ellierozen.github.io/wopoguide/login';">Search</button></center>
