@@ -23,7 +23,7 @@ permalink: /login
         }
         h1, h2 {
             text-align: center;
-            color: #ADD8E6;
+            color: #000;
         }
         form {
             margin-bottom: 20px;
@@ -31,7 +31,7 @@ permalink: /login
         label {
             display: block;
             margin-bottom: 5px;
-            color: #ADD8E6;
+            color: #000;
         }
         input[type="text"],
         input[type="number"],
