@@ -131,7 +131,7 @@ search_exclude: true
         <img src="https://cdn.discordapp.com/attachments/879557685253664768/1204202021599846480/Screenshot_2024-02-05_at_3.08.07_PM.png?ex=65e65486&is=65d3df86&hm=37b546ef67823e88a9d7eb03204520766505b0b6f828d721e337b62f357940dd&" alt="Avatar" style="width:100%; height:250px;">
         <div class="container">
             <center><h4><b>Use our AI platform to help answer any of your pressing questions about WaterPolo.</b></h4></center>
-           <center> <button class="button" onclick="location.href='//127.0.0.1:4100/wopoguide/ai';">Go To Search</button></center>
+           <center> <button class="button" onclick="location.href='//ellierozen.github.io/wopoguide/ai';">Go To Search</button></center>
             <br>
         </div>
     </div>
